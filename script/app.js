@@ -8,7 +8,7 @@ function validateEmail(email) {
   if (+email === 0) {
     return false;
   }
-  if (email.length > 5) {
+  if (email.length < 5) {
     return false;
   }
   const checkCharacters = email.split("");
